@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Filters</title>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+	<script src= "http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+
+</head>
+<body ng-app="" >
+	<div class="container" style="padding-top:20px">
+		<div class="container-fluid">
+			<div ng-controller="personController">
+
+
+				<p>The <span style="color:red">uppercase</span> filter converts from lowercase to uppercase to see the changes type some text in text box.</p>
+				<label>Enter some text:</label>
+				<p><textarea type="text" ng-model="lastname"></textarea></p>
+				<strong>See below the lower case characters are converted to uppercase.</strong>
+				<div style="border:solid;border-width:1px;width:40%">{{lastname | uppercase}}</div>
+			</div>
+			<br><br><hr>
+
+			<div ng-controller="currencyController">
+			<p>Currency Filter</p>
+				<strong>Price:</strong><input type="number" ng-model="price" >
+				<strong>Quatity</strong><input type="number" ng-model="quantity">
+				<p>Total :{{price*quantity | currency:"Rs"}}</p>
+
+			</div>
+
+		</div>
+	</div>
+	<script src="js/app.js"></script>
+</body>
+</html>
