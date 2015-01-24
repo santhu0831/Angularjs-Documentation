@@ -1,0 +1,6 @@
+Steps:
+1. Install node.js if not installed
+3. run 'npm install' in angularJS
+5. start server node server.js
+
+

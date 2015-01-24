@@ -1,0 +1,14 @@
+One way data binding
+Two way data binding
+Controllers
+Multiple Controllers
+
+---------------------------
+
+Steps:
+1. Install node.js if not installed
+2. unzip 'angularJS' into a workplace.
+3. run 'npm install' in angularJS
+5.start server by node angularJS\server.js
+4. Update and use angularJS\app\index.js
+

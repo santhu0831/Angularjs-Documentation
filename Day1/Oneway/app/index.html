@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>One way</title>
+<!-- Cdn for angular js -->
+<script src= "http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+</head>
+
+<body >
+<div  ng-app="" ng-init="firstName = 'Santosh'; lastName = 'Kumar';" class="container">
+  <strong>First name:</strong> {{firstName}}<br />
+  <strong>Last name:</strong> <span ng-bind="lastName"></span>
+</div>
+  <br>
+  <br>
+  <hr>
+  <p>One way data binding:We're saying one way data binding because the model values (here the variables represent the model) are automatically assigned to the HTML placeholder elements specified through the data binding notation, but the HTML elements don't change the values in the model (one way)</p>
+  <p>ng-app:The ng-app directive defines an AngularJS application.</p>
+  <p>ng-init:The ng-init directive initialize AngularJS application variables.</p>
+  <p>ng-bind:The ng-bind directive binds application data to the HTML view.</p>
+  <p>{{expression}}:AngularJS expressions are written inside double braces.</p>
+</body>
+</html>

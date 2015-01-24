@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<script src= "http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+<title>Two Way Data Binding</title>
+
+</head>
+
+<body >
+<div ng-app="" ng-init="firstName = 'Santosh'; lastName = 'Kumar';">
+  <strong>First name:</strong> {{firstName}}<br />
+  <strong>Last name:</strong> <span ng-bind="lastName"></span><br />
+  <br />
+  <label>Set the first name: <input type="text" ng-model="firstName"/></label><br />
+  <label>Set the last name: <input type="text" ng-model="lastName"/></label><br/><br>
+  <strong>First name:</strong> {{firstName}}<br />
+  <strong>Last name:</strong> <span ng-bind="lastName"></span><br />
+ </div> 
+ <br><br>
+ <hr>
+ <p>Two Way data binding : We have a two way data binding when a model variable is bound to a HTML element that can both change and display the value of the variable. In general, we could have more than one HTML element bound to the same variable.
+
+We use the ng-model directive to bind a model variable to the HTML element that can not only display its value, but also change it.
+
+In the example, we bind the firstName and lastName model variables to a couple of HTML input elements. When the page is loaded, the value of the input elements are initialized to those of the respective model variables and whenever the user types something in an input, the value of the model variable is modified as well (two way).</p>
+
+</body>
+</html>

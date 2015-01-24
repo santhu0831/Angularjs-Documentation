@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  <script src= "http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+  <script src="js/app.js"></script>
+</head>
+
+<body ng-app>
+<div class="container">
+<div class="row">
+ <div class="col-xs-6">
+  <div ng-controller="firstController">
+    <h2>Model managed by the first controller</h2>
+    <strong>First name:</strong> {{firstName}}<br />
+    <strong>Last name:</strong> <span ng-bind="lastName"></span><br />
+    <strong>Full name:</strong> {{getFullName()}}<br />
+    <br />
+    <label>Set the first name: <input type="text" ng-model="firstName"/></label><br />
+    <label>Set the last name: <input type="text" ng-model="lastName"/></label>
+  </div>
+  </div>
+   <div class="col-xs-6" style="padding-top:20px">
+     <p>This is the First Controller the controller name is <span style="color:red">firstController</span></p>
+     <p>Check this script file <a href="js/app.js">app.js</a> to see how the model variables are intialized and how the function is called.</p>
+
+   </div>
+
+</div>  
+
+<br><br><hr>
+ <div class="row">
+ <div class="col-xs-6">
+  <div ng-controller="secondController">
+    <h2>Model managed by the second controller</h2>
+    <strong>First name:</strong> {{firstName}}<br />
+    <strong>Middle name:</strong> {{middleName}}<br />
+    <strong>Last name:</strong> <span ng-bind="lastName"></span><br />
+    <strong>Full name:</strong> {{getFullName()}}<br />
+    <br />
+    <label>Set the first name: <input type="text" ng-model="firstName"/></label><br />
+    <label>Set the middle name: <input type="text" ng-model="middleName"/></label><br />
+    <label>Set the last name: <input type="text" ng-model="lastName"/></label>
+  </div>
+  </div>
+  <div class="col-xs-6" style="padding-top:20px">
+     <p>This is the First Controller the controller name is <span style="color:red">secondController</span></p>
+     <p>Check this script file <a href="js/app.js">app.js</a> to see how the model variables are intialized and how the function is called.</p>
+
+   </div>
+
+  </div>
+  </div>
+</body>
+</html>
